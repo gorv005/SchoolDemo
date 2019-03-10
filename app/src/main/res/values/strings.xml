@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CustomBottomSheet</string>
+    <string name="Select_Raduis">Select Radius(In Miles)</string>
+    <string name="school_info">School Details</string>
+    <string name="school_data">School Data</string>
+    <string name="server_error">Server error. Something when wrong with the server</string>
+
+</resources>
