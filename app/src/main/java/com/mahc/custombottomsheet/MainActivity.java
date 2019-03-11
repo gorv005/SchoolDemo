@@ -447,7 +447,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             circleOptions.radius(1 * 1609.34);// Converting Miles into Meters...
 
             // Border color of the circle
-            circleOptions.strokeColor(Color.parseColor("#fff0f5"));
+            circleOptions.strokeColor(Color.parseColor("#77C47E"));
 
             // Fill color of the circle
             // 0x represents, this is an hexadecimal code
@@ -475,16 +475,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(point, 14));
             mMap.animateCamera(CameraUpdateFactory.zoomTo(14), 2000, null);
-            getSchools();
+            getSchools(point);
         }
     }
-    void getSchools(){
+    void getSchools(LatLng latLng){
      //   apiService = APIClient.getClient().create(ApiInterface.class);
        // fetchStores("school","school");
         new NRPlaces.Builder()
                 .listener(this)
                 .key(APIClient.GOOGLE_PLACE_API_KEY)
-                .latlng(28.506454, 77.409568)
+                .latlng(latLng.latitude, latLng.longitude)
                 .radius(1500).type(PlaceType.SCHOOL)
                 .build()
                 .execute();

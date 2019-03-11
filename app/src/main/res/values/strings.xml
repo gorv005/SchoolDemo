@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CustomBottomSheet</string>
+    <string name="app_name">Schools Info</string>
     <string name="Select_Raduis">Select Radius(In Miles)</string>
     <string name="school_info">School Details</string>
     <string name="school_data">School Data</string>
