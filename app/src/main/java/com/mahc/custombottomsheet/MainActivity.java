@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setTitle(" ");
+            actionBar.setTitle("MHRD");
         }
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         circleOptions = new CircleOptions();
@@ -447,7 +447,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             circleOptions.radius(1 * 1609.34);// Converting Miles into Meters...
 
             // Border color of the circle
-            circleOptions.strokeColor(Color.parseColor("#77C47E"));
+            circleOptions.strokeColor(Color.parseColor("#ff9446"));
 
             // Fill color of the circle
             // 0x represents, this is an hexadecimal code
@@ -457,7 +457,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             //circleOptions.fillColor(Color.parseColor("#F8F4E3"));
 
             // Border width of the circle
-            circleOptions.strokeWidth(50);
+            circleOptions.strokeWidth(5);
 
            /* circle.remove();
         }*/

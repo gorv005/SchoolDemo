@@ -36,6 +36,7 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
+
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:popupTheme="@style/AppTheme.PopupOverlay"/>
@@ -76,6 +77,7 @@
         app:layout_anchorGravity="top|right|end"
         android:src="@drawable/ic_action_go"
         android:visibility="invisible"
+        android:layout_gravity="center"
         android:id="@+id/floatingActionButton"
         android:layout_margin="@dimen/fab_margin"
         android:clickable="true"
